@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Horários</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+    <h2>Calculadora de Média de Horários</h2>
+
+    <div id="inputs">
+        <div class="horario">
+            <input type="number" class="horas" placeholder="HH" min="0" max="23">
+            <input type="number" class="minutos" placeholder="MM" min="0" max="59">
+            <input type="number" class="segundos" placeholder="SS" min="0" max="59">
+            <button class="remover" onclick="removerCampo(this)">❌</button>
+           
+            
+        </div>
+    </div>
+
+    <button onclick="adicionarCampo()">Adicionar Horário</button>
+    <button onclick="calcularMedia()">Calcular Média</button>
+
+    <h3>Resultado: <span id="resultado">--:--:--</span></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
